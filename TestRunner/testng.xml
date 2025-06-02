@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Demo Test Automation Test Suite" verbose="1">
+
+	<listeners>
+		<listener class-name="com.demo.qa.Analyzer.MyTransformer" />
+		<listener class-name="com.qa.ExtentReportListner.ExtentReportListener" />
+		<listener class-name="com.qa.ExtentReportListner.TestAllureListener" />
+	</listeners>
+
+	<test name="Demo Automation Framework">
+		<classes>
+			<!--<class name="com.sonarwallet.qa.testcases.SwapTest"></class>-->
+				<class name="com.demo.qa.testcases.SignInTest" />
+				<class name="com.demo.qa.testcases.WhatsUpTest" />
+		</classes>
+	</test>
+</suite>
